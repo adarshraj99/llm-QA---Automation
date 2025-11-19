@@ -1,11 +1,24 @@
-#### 📅 Month 1: LLM & GenAI Foundations (Testing Perspective
-Objective: Understand how LLMs work, what to test, and failure points.
+#### 📅 Month 1: LLM & GenAI Foundations (Testing Perspective)
+Objective: Understand how LLMs work, how to test, what to test, and failure points.
 
 🔹 Concepts
+- llm basics (what it is, Tokens vs words and tokenization basics, How transformers work (high-level only: attention, context window), LLM Input → Output pipeline, Deterministic vs non-deterministic systems).
 - LLM pipeline: tokenization → model → output → eval
-- Prompt engineering basics (few-shot, system prompts, chain-of-thought)
-- Hallucination, bias, toxicity, relevance, factuality
-- QA vs traditional testing: nondeterministic outputs, temperature randomness
+- Prompt engineering basics (few-shot, system/role prompts, Few shot, chain-of-thought, How to structure a prompt, Good vs bad prompt, )
+- Hallucination(fabrication of facts), bias, toxicity, relevance, factuality
+- QA vs traditional testing: nondeterministic outputs, temperature & max-tokens & top-p (randomness output) and other quality metrics.
+- API usage
+- Using constraints (JSON output, roles, steps)
+- loss of context/ incorrect references.
+- Repetition loops
+- Tone deviation
+- Broken JSON / broken structure
+- Overly confident wrong answers
+- accuracy, Consistency, Coherence, safety, latency, cost.
+- Non-determinism: why the same input → different outputs .Compare 3 prompts for same question
+- Evaluating multi-line answers
+- Prompt templates
+
 
 🔹 Tools & Practice
 - Use OpenAI GPT-4o or Gemini 1.5 APIs
