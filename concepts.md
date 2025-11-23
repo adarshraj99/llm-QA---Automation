@@ -202,7 +202,7 @@ Famous Frameworks:
 5. Can you give me utilities/methods where i can generate scores for unsupervised learning ? 
 
 
-## QA Testing from evaluation phase: 
+## QA Testing from evaluation phase:  
 
 #### Temprature Testing: 
 Temprature testing is used to control the randomness of predictions in the generative models. Lower temprature makes model more deterministic while higher temprature makes model more unpredictive and creative. In testing we can test models stablity at different tempratures.
