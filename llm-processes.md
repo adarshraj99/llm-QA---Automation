@@ -3,8 +3,8 @@
 ### neurons: 
 These are mathamatical functions that work together to solve a problem. A neuron just hold a value between 0 and 1. This number inside neuron is called **activation**. Some groups sets firing cause some other groups to fire. 
 
+<img width="792" height="369" alt="image" src="https://github.com/user-attachments/assets/e4a8e61b-16e7-49b6-bd4b-48879a3c743a" />
 
-![image](https://github.com/user-attachments/assets/566eadae-4a26-4cee-be07-88b8209186ef)
 
 Here, splited parts of the input image is checked in second layer. These splited parts may look like a straight vertical or tilted line(|or/) and a straight horozontal line(-) to make '7'. 
 But, how 2nd layer will know which is vertical line or horizontal line ? Basically how it will find the parts of the image ? It is calculated by **weights**
