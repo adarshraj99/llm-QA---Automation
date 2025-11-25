@@ -1,9 +1,30 @@
 ## Neurons and how it learns: 
 
-### neurons: 
-These are mathamatical functions that work together to solve a problem. A neuron just hold a value between 0 and 1. This number inside neuron is called **activation**. Some groups sets firing cause some other groups to fire. 
+### neurons (perceptron): 
+These are small mathamatical functions that work together to solve a problem. A neuron just hold a value between 0 and 1. This number inside neuron is called **activation**. Some groups sets firing cause some other groups to fire. 
 
 <img width="792" height="369" alt="image" src="https://github.com/user-attachments/assets/e4a8e61b-16e7-49b6-bd4b-48879a3c743a" />
+
+* Each neuron receives a number from previous neuron or from input data. ex: Pixel intensity values, Word embeddings, age, salary, etc.
+* Each input have a weight that decides it's importance. `weighted sum=w1​x1​+w2​x2​+.....+wn​xn​` and a bias term makes the neuron more flexible `z=w⋅x+b` ,then it is passed through an activation function. Activations create non-linearity, letting the model learn complex patterns `output=activation(z)`. 
+* Common activations: ReLU, Sigmoid, Tanh, GELU (used in GPT-style models)
+* A neuron decides: “Should I fire or not? And by how much?” .This 'how much' is weight. 
+* Types of Neurons:
+      1. Input Neurons: Just pass the raw data into the network.
+      2. Hidden Neurons: Do the actual computation & pattern learning.
+      3. Output Neurons: Produce the final prediction.
+* Neuron in python:
+```
+import numpy as np
+
+def neuron(x, w, b):
+    z = np.dot(w, x) + b   # weighted sum
+    return max(0, z)       # ReLU activation
+x = np.array([1.0, 2.0])
+w = np.array([0.4, 0.6])
+b = -0.2
+print(neuron(x, w, b))
+```
 
 
 Here, splited parts of the input image is checked in second layer. These splited parts may look like a straight vertical or tilted line(|or/) and a straight horozontal line(-) to make '7'. 
