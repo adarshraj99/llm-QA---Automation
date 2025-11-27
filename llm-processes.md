@@ -25,6 +25,46 @@ w = np.array([0.4, 0.6])
 b = -0.2
 print(neuron(x, w, b))
 ```
+```
+x = input vector/tensor
+W = learned weight vector
+b = learned bias
+σ = activation
+y = output tensor
+```
+
+Types: 
+#### Multi-Layer Perceptron (MLP) or Fully Connected Neurons: 
+* Every neuron is connected to all inputs.
+* Feed Forward Network (FFN) inside Transformers.
+
+
+#### Convolutional Neural Networks (CNNs): 
+* Not fully connected in hidden layers. Neurons connect only to a local region of the input (called the receptive field)
+* It does parameter sharing, uses a kernel receptive field, learns spatial patterns. 
+* A convolution filter might look at a 3×3 patch of an image, not the whole image. It learns edges, textures, deeper layers → shapes, final layers → objects
+
+
+#### Recurrent Neural Networks (RNNs): 
+* Connections are temporal, not fully connected.
+* Each neuron connects to the next layer and also back to itself (or previous time step) to capture sequences.
+* So connections are directed in time, not all-to-all across layers
+
+#### Transformers: 
+* Use self attention mechanisms instead of fixed connections. Each token can attend to all others, but this is not the same as neuron-to-neuron full connectivity.
+* transformers have Self-Attention. So neurons inside multi-head attention route information between tokens.
+* Feed Forward Network (FFN): This is where MOST neurons live. FFN hidden = 13440 (for GPT-3.5 scale). The FFN expands → activates → projects back: `FFN(x)=W2​σ(W1​x+b1​)+b2`.
+* Every “neuron” is basically one element controlling attention flow:
+  <img width="275" height="59" alt="image" src="https://github.com/user-attachments/assets/0a03c7f8-bddd-4fc6-b62b-8c8c0ef9e7f7" />
+  
+  So neurons inside multi-head attention route information between tokens.
+
+
+
+#### Graph Neural Networks (GNNs): Neurons (nodes) connect only to their neighbors in the graph, not all nodes.
+
+
+#### 
 
 
 Here, splited parts of the input image is checked in second layer. These splited parts may look like a straight vertical or tilted line(|or/) and a straight horozontal line(-) to make '7'. 
