@@ -74,17 +74,12 @@ But, how 2nd layer will know which is vertical line or horizontal line ? Basical
 ### Weights: 
 These are numbers assigned as strength between neurons connection. Basically it is number between -n and +n (different for different models). Higher weight will confirm better connection and vise versa. Neuron data with Higher weight will have more chance of passing to next neuron layer for further processing. 
 
-![image](https://github.com/user-attachments/assets/da0dff38-e94c-46aa-8501-93fed23a8975)
 
 It is called **weighted sum**. Here, the w1,w2,w3,w4,......wn are weights and a1,a2,a3,.......an are **activations**. When, we calculate all the weights in a matrix of pixels below. It is seen that the most positive weights for part(-) of input(7) is at the correct position.
 
-Here the weighted sum is equal to the value of pixels of the needed part. 
-
-![image](https://github.com/user-attachments/assets/1f6279e2-aff0-4cf2-a2ca-81b76048c425)
+Here the weighted sum is equal to the value of pixels of the needed part.
 
 The activation range depends on the activation function used. A common function used called **sigmoid function or logistic curve** does this conversion from big scale (-n to +n) to 0 to 1 scale value update. More positive values gets near to 1.
-
-![image](https://github.com/user-attachments/assets/0df9289a-29d1-4df3-8d5c-0a4625f4dbc6)
 
 
 
