@@ -1,10 +1,13 @@
 Convolutional Neural Networks also called Computer vision.
 
 transformers: 
+Feed Forward Network (FFN) inside Transformers:
 
 bias: 
 
 variance: 
+
+
 
 ### Neural Networks: 
 Network of neurons. Neuron is a **Function to be created** if we know some Actual Inputs and Actual Outputs. Neuron is a fundamental processing unit, analogous to brain neurons which receives input signals, **applies calculations(in weights & Biases)** and produce output signals. It gets trained with more and more Input data and later by **decreasing the error (Cost) following the gradient descent concept.** 
