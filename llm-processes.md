@@ -50,7 +50,8 @@ https://www.youtube.com/watch?v=QzY57FaENXg
 * Connections are temporal, not fully connected.
 * Each neuron connects to the next layer and also back to itself (or previous time step) to capture sequences. So connections are directed in time, not all-to-all across layers
 * RNNs remember the previous inputs from the previous data which helps them to analyze context in data like roads in image, finding next word in sentance.
-* Unlike other Neural Networks, RNNs have their own loops(hidden states) to gather informations from the previous states. The output(y) is dpendant on the hidden state(h) on equation:  `y_t=\phi (W_yh_t+c)`. The new hidden state is calculated with previous hidden state and the new hidden state `h_t=\phi (W_xx_t+W_hh_{t-1}+b)`. 
+* Unlike other Neural Networks, RNNs have their own loops(hidden states) to gather informations from the previous states. The output(y) is dpendant on the hidden state(h) on equation:  `y_t=\phi (W_yh_t+c)`. The new hidden state is calculated with previous hidden state and the new hidden state `<img width="297" height="74" alt="image" src="https://github.com/user-attachments/assets/b908776a-67af-41af-940c-24a75db8ae4e" />
+`. 
 
 #### Transformers: 
 * Use self attention mechanisms instead of fixed connections. Each token can attend to all others, but this is not the same as neuron-to-neuron full connectivity.
