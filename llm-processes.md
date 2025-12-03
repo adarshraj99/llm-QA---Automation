@@ -40,15 +40,17 @@ Types:
 
 
 #### Convolutional Neural Networks (CNNs): 
+https://www.youtube.com/watch?v=QzY57FaENXg
 * Not fully connected in hidden layers. Neurons connect only to a local region of the input (called the receptive field)
-* It does parameter sharing, uses a kernel receptive field, learns spatial patterns. 
+* It does parameter sharing, uses a kernel receptive field, matches parttern by pattern(pixel by pixel) to the whole picure to find out if both are matching.
 * A convolution filter might look at a 3×3 patch of an image, not the whole image. It learns edges, textures, deeper layers → shapes, final layers → objects
 
 
 #### Recurrent Neural Networks (RNNs): 
 * Connections are temporal, not fully connected.
-* Each neuron connects to the next layer and also back to itself (or previous time step) to capture sequences.
-* So connections are directed in time, not all-to-all across layers
+* Each neuron connects to the next layer and also back to itself (or previous time step) to capture sequences. So connections are directed in time, not all-to-all across layers
+* RNNs remember the previous inputs from the previous data which helps them to analyze context in data like roads in image, finding next word in sentance.
+* Unlike other Neural Networks, RNNs have their own loops(hidden states) to gather informations from the previous states. The output(y) is dpendant on the hidden state(h) on equation:  `y_t=\phi (W_yh_t+c)`. The new hidden state is calculated with previous hidden state and the new hidden state `h_t=\phi (W_xx_t+W_hh_{t-1}+b)`. 
 
 #### Transformers: 
 * Use self attention mechanisms instead of fixed connections. Each token can attend to all others, but this is not the same as neuron-to-neuron full connectivity.
