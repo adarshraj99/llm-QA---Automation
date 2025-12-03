@@ -51,6 +51,7 @@ https://www.youtube.com/watch?v=QzY57FaENXg
 * Each neuron connects to the next layer and also back to itself (or previous time step) to capture sequences. So connections are directed in time, not all-to-all across layers
 * RNNs remember the previous inputs from the previous data which helps them to analyze context in data like roads in image, finding next word in sentance.
 * Unlike other Neural Networks, RNNs have their own loops(hidden states) to gather informations from the previous states. The output(y) is dpendant on the hidden state(h) on equation:  <img width="151" height="39" alt="image" src="https://github.com/user-attachments/assets/751743f1-7adf-4e7b-b950-882ce0368e92" />   The new hidden state is calculated with previous hidden state and the new hidden state <img width="297" height="74" alt="image" src="https://github.com/user-attachments/assets/b908776a-67af-41af-940c-24a75db8ae4e" />
+- here : wh and wx are the weight matrix , xt is current input,  ht-1 is the previous hidden state b is bias .
 
 
 #### Transformers: 
